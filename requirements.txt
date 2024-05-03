@@ -1,0 +1,10 @@
+streamlit
+requests
+pandas
+scikit-learn
+openpyxl
+plotly_express==0.4.0
+matplotlib==3.8.2
+seaborn==0.13.2
+requests
+plotly_express
