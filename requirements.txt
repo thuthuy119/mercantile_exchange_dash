@@ -1,8 +1,8 @@
 streamlit
-requests
+mplfinance
 pandas
-scikit-learn
-openpyxl
+datetime
+plotly.graph_objects
 plotly_express==0.4.0
 matplotlib==3.8.2
 seaborn==0.13.2
