@@ -9,7 +9,9 @@ import plotly.graph_objects as go
 import plotly.express as px
 import streamlit as st
 
-
+st.set_page_config(
+    layout="wide",
+    initial_sidebar_state="expanded")
 #----------------------1. IMPORT DATA ---------------------------------------
 
 ## ------1.1. Dữ liệu----------------------------
@@ -230,7 +232,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        #width=1200, height=600
+                        width=1100, height=600
                            )  # Điều chỉnh độ rộng của biểu đồ
 
         # Hiển thị biểu đồ trên Streamlit
@@ -258,7 +260,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        #width=1200, height=600
+                        width=1100, height=600
                             )
 
         # Hiển thị biểu đồ
@@ -290,7 +292,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        #width=1200, height=600
+                        width=1100, height=600
                            )  # Điều chỉnh độ rộng của biểu đồ
 
         # Hiển thị biểu đồ trên Streamlit
@@ -318,7 +320,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        #width=1200, height=600
+                        width=1100, height=600
                             )
 
         # Hiển thị biểu đồ
@@ -352,7 +354,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        #width=1200, height=600
+                        width=1100, height=600
                            )  # Điều chỉnh độ rộng của biểu đồ
 
         # Hiển thị biểu đồ trên Streamlit
@@ -382,7 +384,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        #width=1200, height=600
+                        width=1100, height=600
                             )
 
         # Hiển thị biểu đồ
@@ -398,7 +400,7 @@ with st.expander("Tài khoản giao dịch"):
     # Vẽ biểu đồ tròn
     fig_pie = px.pie(df_pie, values='Giá trị giao dịch', names='Nhóm KH', 
                 title='Tỉ trọng giá trị giao dịch theo Nhóm KH',
-                labels={'Giá trị giao dịch': 'Giá trị giao dịch (tỷ đồng)', 'Nhóm KH': 'Nhóm KH'}, #width=550
+                labels={'Giá trị giao dịch': 'Giá trị giao dịch (tỷ đồng)', 'Nhóm KH': 'Nhóm KH'}, width=450
                     )
 
     # Hiển thị tỷ trọng của giá trị
@@ -416,7 +418,7 @@ with st.expander("Tài khoản giao dịch"):
     # Vẽ biểu đồ tròn cho sản phẩm cụ thể
     fig_pie_hh = px.pie(df_pie_hh, values='Giá trị giao dịch', names='Nhóm KH', 
                 title=f'Tỉ trọng giá trị giao dịch theo Nhóm KH của mặt hàng {product}',
-                labels={'Giá trị giao dịch': 'Giá trị giao dịch (tỷ đồng)', 'Nhóm KH': 'Nhóm KH'}, #width=550
+                labels={'Giá trị giao dịch': 'Giá trị giao dịch (tỷ đồng)', 'Nhóm KH': 'Nhóm KH'}, width=450
                        )
 
     # Hiển thị tỷ trọng của giá trị
@@ -452,7 +454,7 @@ with st.expander("Tài khoản giao dịch"):
                     plot_bgcolor='rgba(0, 00, 0, 0)',
                     paper_bgcolor='rgba(0, 00, 0, 0)',
                     margin=dict(l=250) #, r=50, t=70, b=50)
-                    #, width=550
+                    , width=450
                          )
     
     df_open_position_pn_hh = df_open_position_hh[df_open_position_hh['Nhóm KH'] == "Pháp nhân"]
@@ -476,7 +478,7 @@ with st.expander("Tài khoản giao dịch"):
                     plot_bgcolor='rgba(0, 00, 0, 0)',
                     paper_bgcolor='rgba(0, 00, 0, 0)',
                     margin=dict(l=250) #, r=50, t=70, b=50)
-                    #, width=550
+                   , width=450
                             )
 
 
