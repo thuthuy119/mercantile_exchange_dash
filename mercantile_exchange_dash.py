@@ -20,7 +20,7 @@ def load_data(file_path):
     df = pd.read_excel(file_path)
 
     # Chuyển các cột 'Ngày dữ liệu', 'Ngày đặt lệnh', 'Ngày giờ thực hiện' về kiểu datetime
-# Chuyển đổi cột 'Ngày dữ liệu' sang datetime và hiển thị theo định dạng '%d/%m/%Y'
+    # Chuyển đổi cột 'Ngày dữ liệu' sang datetime và hiển thị theo định dạng '%d/%m/%Y'
     # Chuyển đổi định dạng của cột 'Ngày dữ liệu' sang datetime
     df['Ngày dữ liệu'] = pd.to_datetime(df['Ngày dữ liệu'], format='%d/%m/%Y')
 
