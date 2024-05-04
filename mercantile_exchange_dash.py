@@ -454,7 +454,7 @@ with st.expander("Tài khoản giao dịch"):
     fig_bar.update_layout(title='Giá trị giao dịch tất cả các loại hàng hóa theo pháp nhân',
                     xaxis_title='tỷ đồng',
                     #yaxis_title='Tên TKGD',
-                    font=dict(family="Arial, sans-serif", size=12),
+                    font=dict(family="Arial, sans-serif", size=10),
                     plot_bgcolor='rgba(0, 00, 0, 0)',
                     paper_bgcolor='rgba(0, 00, 0, 0)',
                     margin=dict(l=250) #, r=50, t=70, b=50)
@@ -478,7 +478,7 @@ with st.expander("Tài khoản giao dịch"):
     fig_bar_hh.update_layout(title=f'Giá trị giao dịch mặt hàng {product} theo pháp nhân',
                     xaxis_title='tỷ đồng',
                     #yaxis_title='Tên TKGD',
-                    font=dict(family="Arial, sans-serif", size=12),
+                    font=dict(family="Arial, sans-serif", size=10),
                     plot_bgcolor='rgba(0, 00, 0, 0)',
                     paper_bgcolor='rgba(0, 00, 0, 0)',
                     margin=dict(l=250) #, r=50, t=70, b=50)
