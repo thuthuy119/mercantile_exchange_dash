@@ -403,7 +403,7 @@ with st.expander("Tài khoản giao dịch"):
                 labels={'Giá trị giao dịch': 'Giá trị giao dịch (tỷ đồng)', 'Nhóm KH': 'Nhóm KH'}, width=450
                     )
     # Thay đổi cỡ chữ của title
-    fig_pie.update_layout(title_font=dict(size=12))
+    fig_pie.update_layout(title_font=dict(size=14))
     # Hiển thị tỷ trọng của giá trị
     for i in range(len(df_pie)):
         fig_pie.add_annotation(x=df_pie.iloc[i]['Nhóm KH'], y=df_pie.iloc[i]['Giá trị giao dịch'],
@@ -424,7 +424,7 @@ with st.expander("Tài khoản giao dịch"):
                 labels={'Giá trị giao dịch': 'Giá trị giao dịch (tỷ đồng)', 'Nhóm KH': 'Nhóm KH'}, width=450
                        )
     # Thay đổi cỡ chữ của title
-    fig_pie_hh.update_layout(title_font=dict(size=12))
+    fig_pie_hh.update_layout(title_font=dict(size=14))
     # Hiển thị tỷ trọng của giá trị
     for i in range(len(df_pie_hh)):
         fig_pie_hh.add_annotation(x=df_pie_hh.iloc[i]['Nhóm KH'], y=df_pie_hh.iloc[i]['Giá trị giao dịch'],
