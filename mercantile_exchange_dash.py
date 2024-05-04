@@ -39,7 +39,8 @@ def load_data(file_path):
     
     return df
 
-file_path_df = "https://github.com/thuthuy119/mercantile_exchange_dash/blob/main/Data_MXV_T1-4_2024_(2).xlsx"
+#file_path_df = "https://github.com/thuthuy119/mercantile_exchange_dash/blob/main/Data_MXV_T1-4_2024_(2).xlsx"
+file_path_df = "Data_MXV_T1-4_2024_(2).xlsx"
 
 df = load_data(file_path_df)
 
