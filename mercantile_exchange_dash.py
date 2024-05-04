@@ -232,7 +232,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        width=1100, height=600
+                        width=1000, height=600
                            )  # Điều chỉnh độ rộng của biểu đồ
 
         # Hiển thị biểu đồ trên Streamlit
@@ -260,7 +260,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        width=1100, height=600
+                        width=1000, height=600
                             )
 
         # Hiển thị biểu đồ
@@ -292,7 +292,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        width=1100, height=600
+                        width=1000, height=600
                            )  # Điều chỉnh độ rộng của biểu đồ
 
         # Hiển thị biểu đồ trên Streamlit
@@ -320,7 +320,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        width=1100, height=600
+                        width=1000, height=600
                             )
 
         # Hiển thị biểu đồ
@@ -354,7 +354,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        width=1100, height=600
+                        width=1000, height=600
                            )  # Điều chỉnh độ rộng của biểu đồ
 
         # Hiển thị biểu đồ trên Streamlit
@@ -384,7 +384,7 @@ with st.expander("So sánh"):
                         paper_bgcolor='rgba(0,0,0,0)',
                         margin=dict(l=50, r=50, t=70, b=50),
                         showlegend=True,
-                        width=1100, height=600
+                        width=1000, height=600
                             )
 
         # Hiển thị biểu đồ
