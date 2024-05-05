@@ -730,7 +730,7 @@ if __name__ == '__main__':
             combined_1 = pd.concat([filtered_grouped, rest])
 
             # Tính tỷ trọng cho từng loại 'Tổng khối lượng giao dịch'
-            combined_1['Tỷ trọng khối lượng giao dịch'] = combined_1['Tổng khối lượng giao dịch'] / combined_1['Tổng khối lượng giao dịch'].sum()*100
+            combined_1['Thị phần (%)'] = combined_1['Tổng khối lượng giao dịch'] / combined_1['Tổng khối lượng giao dịch'].sum()*100
 
             #-------------------------
             grouped = df_open_position.groupby(['Mã môi giới'])['Giá trị giao dịch'].sum().reset_index()
@@ -754,15 +754,17 @@ if __name__ == '__main__':
             combined_2 = pd.concat([filtered_grouped, rest])
 
             # Tính tỷ trọng cho từng loại 'Giá trị giao dịch'
-            combined_2['Tỷ trọng khối lượng giao dịch'] = combined_2['Giá trị giao dịch'] / combined_2['Giá trị giao dịch'].sum()*100
+            combined_2['Thị phần (%)'] = combined_2['Giá trị giao dịch'] / combined_2['Giá trị giao dịch'].sum()*100
 
             #combined_2 = combined_2.round(2).reset_index("Mã môi giới")
             #combined_1 = combined_1.round(2).drop(columns = {"index"}).reset_index()
+            
+            st.write("<p style='font-family:Arial; font-size:12px; font-weight:bold;'>Thị phần: </p>", unsafe_allow_html=True)
             col1, col2 = st.columns(2)
 
             with col1:
                 # st.write("<p style='font-family:Arial; font-size:12px; font-weight:bold;'>Thị phần theo Giá trị giao dịch:</p>", unsafe_allow_html=True)
-                st.write("<p style='font-family:Arial; font-size:12px; '>#Thị phần theo Giá trị giao dịch: </p>", unsafe_allow_html=True)
+                st.write("<p style='font-family:Arial; font-size:12px; '>#Thị phần theo Giá trị giao dịch (Tỷ đồng): </p>", unsafe_allow_html=True)
 
                 st.dataframe(combined_2)
 
