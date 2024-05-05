@@ -510,3 +510,20 @@ if __name__ == '__main__':
                 st.plotly_chart(fig_bar)
             with col2:
                 st.plotly_chart(fig_bar_hh)
+
+    else:
+        # Nếu chưa đăng nhập, hiển thị giao diện đăng nhập
+        st.title('Đăng nhập hệ thống')
+        username = st.text_input('Tên đăng nhập:')
+        password = st.text_input('Mật khẩu:', type='password')
+        login_button = st.button('Đăng nhập')
+
+        if login_button:
+            if authenticate(username, password):
+                st.success('Đăng nhập thành công!')
+                # Lưu thông tin đăng nhập vào session state
+                st.session_state['username'] = username
+                # Load lại trang web để áp dụng thông tin đăng nhập
+                st.experimental_rerun()
+            else:
+                st.error('Tên đăng nhập hoặc mật khẩu không đúng.')
