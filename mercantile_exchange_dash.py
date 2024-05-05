@@ -169,11 +169,11 @@ if __name__ == '__main__':
             with col1:
                 st.write("Mức giá cao nhất:", round(high_price, 2))
                 st.write("Mức giá thấp nhất:", round(low_price, 2))
-                st.write("Mức giá trung bình trong một phiên:", round(average_price, 2))
+                st.write("Mức giá trung bình:", round(average_price, 2))
         
             with col2:
                 st.write("Giá trị giao dịch cao nhất:", max_volume, "tỷ đồng")
-                st.write("Giá trị giao dịch trung bình trong một phiên:", average_volume, "tỷ đồng")
+                st.write("Giá trị giao dịch trung bình:", average_volume, "tỷ đồng")
         
         
         
@@ -408,7 +408,7 @@ if __name__ == '__main__':
                 # Hiển thị biểu đồ
                 st.plotly_chart(fig_3a)
             
-        with st.expander("Tài khoản giao dịch"):
+        with st.expander("Tần suất, khối lượng giao dịch theo tài khoản"):
             # Groupby theo 'Nhóm KH' và tính tổng 'Giá trị giao dịch' cho mỗi nhóm
             df_pie= df_open_position.groupby('Nhóm KH')['Giá trị giao dịch'].sum().reset_index()
             # Điều chỉnh DataFrame df_pie bằng cách tính tỷ trọng
