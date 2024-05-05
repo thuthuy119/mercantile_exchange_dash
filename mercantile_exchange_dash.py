@@ -60,8 +60,8 @@ if __name__ == '__main__':
             
             return df
         
-        file_path_df = "C:/Users/admin/OneDrive - ftu.edu.vn/Máy tính/Data Sở giao dịch hàng hóa/Data_MXV_T1-4_2024_(2).xlsx"
-        #file_path_df = "Data_MXV_T1-4_2024_(2).xlsx"
+        # file_path_df = "C:/Users/admin/OneDrive - ftu.edu.vn/Máy tính/Data Sở giao dịch hàng hóa/Data_MXV_T1-4_2024_(2).xlsx"
+        file_path_df = "Data_MXV_T1-4_2024_(2).xlsx"
         
         df = load_data(file_path_df)
         
