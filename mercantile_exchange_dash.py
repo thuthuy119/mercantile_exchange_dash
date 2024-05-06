@@ -177,7 +177,7 @@ if __name__ == '__main__':
         
         
         
-        with st.expander("So sánh"):
+        with st.expander("So sánh về các mặt hàng"):
         
             # Sắp xếp theo thời gian trong cột 'Ngày giờ thực hiện'
             df = df.sort_values(by='Ngày giờ thực hiện')
