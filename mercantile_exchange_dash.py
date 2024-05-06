@@ -755,9 +755,9 @@ if __name__ == '__main__':
 
             # Tính tỷ trọng cho từng loại 'Giá trị giao dịch'
             combined_2['Thị phần (%)'] = combined_2['Giá trị giao dịch'] / combined_2['Giá trị giao dịch'].sum()*100
-
-            combined_2 = combined_2.round(2).drop("index", axis=1).reset_index(drop=True)
-            combined_1 = combined_1.round(2).drop("index", axis=1).reset_index(drop=True)
+            
+            #combined_2 = combined_2.round(2).reset_index().drop(columns = {"index"})
+            #combined_1 = combined_1.round(2).reset_index().drop(columns = {"index"})
             
             st.write("<p style='font-family:Arial; font-size:12px; font-weight:bold;'>Thị phần: </p>", unsafe_allow_html=True)
             col1, col2 = st.columns(2)
